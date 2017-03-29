@@ -48,4 +48,4 @@ Temporary Items
 
 
 # Java executables
-.class
+*.class
