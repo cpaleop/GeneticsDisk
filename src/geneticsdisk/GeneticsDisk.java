@@ -4,8 +4,8 @@ package geneticsdisk;
 public class GeneticsDisk {
 
     static String targetPhrase;
-//    static double files[] = {10,39,4,191,48,1,586,18,56,6,15,3};
-    static double files[] = {20,39,4,190,48,1,580,18,56,5,10,3};
+    static double files[] = {10,39,4,191,48,1,586,18,56,6,15,3};
+//    static double files[] = {20,39,4,190,48,1,580,18,56,5,10,3};
 //    static double files[] = {1,1};
     static double TARGET[] = files;
     static int diskSize = 800;
