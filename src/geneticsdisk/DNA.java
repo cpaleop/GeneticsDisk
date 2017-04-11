@@ -62,11 +62,18 @@ public class DNA {
             if(this.genes[i] == 1)
                 sum += GeneticsDisk.files[i];
         }
-        this.fitness = Math.abs(sum - GeneticsDisk.diskSize)/GeneticsDisk.diskSize;
+        
+//        System.out.println("NOMNOMNOM " + ((GeneticsDisk.diskSize - sum) / GeneticsDisk.diskSize));
+  
+        this.fitness = sum/GeneticsDisk.diskSize;
+        
+//        this.fitness = (GeneticsDisk.diskSize - sum) / GeneticsDisk.diskSize;
+//        this.fitness = Math.abs(sum - GeneticsDisk.diskSize)/GeneticsDisk.diskSize;
     }
     
     
     
+    //GET THE SUM OF REPRESENTED FILES
     public double calcSum(){
         double sum = 0;
         for(int i = 0; i<this.genes.length; i++)
